@@ -1,2 +1,24 @@
-<h1>Store#index</h1>
-<p>Find me in app/views/store/index.html.erb</p>
+<p id="notice"><%= notice %></p>
+<table class="table table-striped">
+
+  <thead >
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Image url</th>
+      <th>Price</th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+
+<tbody>
+        <% @products.each do |product| %>
+        <tr>
+                <td><%= product.title %></td>
+                <td><%= sanitize(product.description) %></td>     
+                <td><img src="<%= product.image_url %>" ></td>
+                <td><%= number_to_currency(product.price) %></td>
+        </tr>
+        <% end %>
+</tbody>
+</table>
