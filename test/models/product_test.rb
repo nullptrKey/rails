@@ -1,14 +1,26 @@
 require 'test_helper'
 
 class ProductTest < ActiveSupport::TestCase
-  test "should not save product without a title" do
+
+  test "Product test" do
     product = Product.new
-    assert_not product.save, "Saved the product without a title"
+    assert product.invalid?
+    assert product.errors[:title].any?
+    assert product.errors[:description].any?
+    assert product.errors[:price].any?
+    assert product.errors[:image_url].any?
   end
 
-  test "should save product with valid attributes" do
-    fixtures :products
-    #product = Product.new(title: "Example Product", description: "Example description", image_url: "example.jpg")
-    assert products.save, "Failed to save the product with valid attributes"
+  test 'product price' do
+    product = Product.new(    title: Faker::Commerce.product_name,
+                              description: Faker::Lorem.paragraph,
+                              image_url: Faker::Avatar.image,
+    #price: Faker::Commerce.price(range: 1..100.0, as_string: true)
+    )
+    product.price = -1
+    assert product.invalid?
+    assert_equal ["test"],
+                 product.errors[:price]
   end
 end
+

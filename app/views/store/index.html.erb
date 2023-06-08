@@ -17,6 +17,7 @@
                 <td><%= product.title %></td>
                 <td><%= sanitize(product.description) %></td>     
                 <td><img src="<%= product.image_url %>" ></td>
+
                 <td><%= number_to_currency(product.price) %></td>
         </tr>
         <% end %>
