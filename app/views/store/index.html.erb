@@ -3,6 +3,7 @@
 
   <thead >
     <tr>
+      <th>Time</th>
       <th>Title</th>
       <th>Description</th>
       <th>Image url</th>
@@ -14,10 +15,10 @@
 <tbody>
         <% @products.each do |product| %>
         <tr>
+                <td><%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %></td>
                 <td><%= product.title %></td>
                 <td><%= sanitize(product.description) %></td>     
                 <td><img src="<%= product.image_url %>" ></td>
-
                 <td><%= number_to_currency(product.price) %></td>
         </tr>
         <% end %>

@@ -5,16 +5,16 @@
     <option name="openedFilesInfos">
       <list>
         <OpenedFileInfo>
+          <option name="caretOffset" value="815" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/test/models/product_test.rb" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
           <option name="caretOffset" value="356" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/test/controllers/products_controller_test.rb" />
         </OpenedFileInfo>
         <OpenedFileInfo>
           <option name="caretOffset" value="0" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/test/test_helper.rb" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="0" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/test/application_system_test_case.rb" />
         </OpenedFileInfo>
         <OpenedFileInfo>
           <option name="caretOffset" value="0" />
@@ -25,16 +25,28 @@
           <option name="fileUrl" value="file://$PROJECT_DIR$/app/controllers/store_controller.rb" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="2208" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/Gemfile" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
           <option name="caretOffset" value="575" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/db/seeds.rb" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="545" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/test/models/product_test.rb" />
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/app/controllers/products_controller.rb" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="166" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/app/models/product.rb" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/test/fixtures/products.yml" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="594" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/config/database.yml" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/app/views/store/index.html.erb" />
         </OpenedFileInfo>
       </list>
     </option>
